@@ -72,13 +72,13 @@ def f(X):
 #     arrr.append(row)
 #     contr=
 # varbound=np.array([[0,99]]*50)
-algorithm_param = {'max_num_iteration': 4600,\
-                   'population_size':200,\
-                   'mutation_probability':0.2,\
-                   'elit_ratio': 0.6,\
-                   'crossover_probability': 0.5,\
+algorithm_param = {'max_num_iteration': 1200,\
+                   'population_size':300,\
+                   'mutation_probability':0.1,\
+                   'elit_ratio': 0.5,\
+                   'crossover_probability': 0.9,\
                    'parents_portion': 0.8,\
-                   'crossover_type':'uniform',\
+                   'crossover_type':'one_point',\
                    'max_iteration_without_improv':None}
 model=ga(function=f,dimension=100,variable_type='bool',algorithm_parameters=algorithm_param)
 model.run()
