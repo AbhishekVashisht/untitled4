@@ -72,7 +72,7 @@ def f(X):
 #     arrr.append(row)
 #     contr=
 # varbound=np.array([[0,99]]*50)
-algorithm_param = {'max_num_iteration': 1200,\
+algorithm_param = {'max_num_iteration': 1000,\
                    'population_size':300,\
                    'mutation_probability':0.1,\
                    'elit_ratio': 0.5,\
